@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
 def preprocess_data(df):
-    # Convert 'time' column to total minutes
+    # Convert 'time' column into total minutes
     if 'time' in df.columns:
         df['time'] = df['time'].apply(lambda x: int(x.split(':')[0]) * 60 + int(x.split(':')[1]))
 
