@@ -4,7 +4,7 @@ import joblib
 from data_preprocessing import preprocess_data, split_data
 
 def train_model(data_path, target_column, model_path):
-    # Load the dataset
+    # Loading the dataset
     df = pd.read_csv(data_path)
     
     # Preprocess the data
